@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    hr {
+      border: 1mm;
+      height: 0.1mm;
+    }
+    body {
+      background-image: url("727603.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .b {
+      background-color: aqua;
+      font-size: 1.5em;
+    }
+
+    .root {
+      text-align: inherit;
+      color: rgba(0, 0, 0, 0.982);
+      font-size: 5em;
+      font-family: Arial, Helvetica, sans-serif;
+      font-display: auto;
+    }
+
+    .button {
+      position: relative;
+      background-color: #cbf681d7;
+      border: none;
+      font-size: 28px;
+      color: #000000;
+      padding: 2px;
+      width: 200px;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .button:after {
+      content: "";
+      background: #e7e3e7;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px !important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 1s;
+    }
+
+    .button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s;
+    }
+  </style>
+  <body>
+    <title>The Root</title>
+    <h1 class="root">The RooT</h1>
+    <center>
+      <hr color="red" />
+      <b class="b"> welcome to "THE ROOT" where you find about root's</b>
+      <hr color="red" />
+    </center>
+    <br />
+    <br />
+    <br />
+
+    <button onclick="reload()" class="button">Home</button><br /><br />
+    <button class="button">sitemap</button><br /><br />
+    <button class="button">Roots</button><br /><br />
+    <button class="button">plants</button><br /><br />
+    <script>
+      function reload() {
+        window.location.href = window.location.href;
+      }
+    </script>
+  </body>
+</html>
